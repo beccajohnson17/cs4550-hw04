@@ -1,0 +1,14 @@
+<%# I used stackoverflow to help with outputting each item in a list
+ https://stackoverflow.com/questions/28459493/iterate-over-list-in-embedded-elixir %>
+<div class="row">
+  <div class="column">
+    <p><%= link "← go back", to: "/" %></p>
+    <h2>Factor Results</h2>
+    <p>Your number = <%= @x %></p>
+    <ul> Prime factors list:
+      <%= for prime <- @y do %>
+        <li><%= prime %></li>
+      <% end %>
+      </ul>
+  </div>
+</div>
